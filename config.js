@@ -1,4 +1,4 @@
-const { Sequelize } = require("sequelize");
+uconst { Sequelize } = require("sequelize");
 const fs = require("fs");
 if (fs.existsSync("config.env"))
   require("dotenv").config({ path: "./config.env" });
@@ -10,7 +10,7 @@ let HANDLER = "false";
 
 module.exports = {
   //For Enabling Commands Like AUTO_STATUS_RED Type true For Disenabling Type false
-  ANTILINK: toBool(process.env.ANTI_LINK) || false,
+  ANTILINK: toBool(process.env.ANTI_LINK) || true,
   //_________________________________________________________________________________________________________________________________
   LOGS: toBool(process.env.LOGS) || true,
   //_________________________________________________________________________________________________________________________________
@@ -18,13 +18,13 @@ module.exports = {
   //_________________________________________________________________________________________________________________________________
   AUTO_REACT: process.env.AUTO_REACT || 'false',
   //_________________________________________________________________________________________________________________________________
-  AUDIO_DATA: process.env.AUDIO_DATA || "Phoenix-MD;Abhishek Suresh;https://graph.org/file/8976892f2f615077b48cd.jpg",
+  AUDIO_DATA: process.env.AUDIO_DATA || "Phoenix-MD;Ahmiii 26ModZ;https://graph.org/file/8976892f2f615077b48cd.jpg",
   //_________________________________________________________________________________________________________________________________
   AUTO_STATUS_READ: process.env.AUTO_STATUS_READ || 'false',
   //_________________________________________________________________________________________________________________________________
-  SESSION_ID: process.env.SESSION_ID || "", //Enter Your Session Id Here
+  SESSION_ID: process.env.SESSION_ID || "Phoenix~qAscX0vv", //Enter Your Session Id Here
   //_________________________________________________________________________________________________________________________________
-  SUDO: process.env.SUDO || "919074692450",
+  SUDO: process.env.SUDO || "923039538288",
   //_________________________________________________________________________________________________________________________________
   SPAM_COUNT: process.env.SPAM_COUNT || "10",
   //_________________________________________________________________________________________________________________________________
@@ -48,15 +48,15 @@ module.exports = {
   //_________________________________________________________________________________________________________________________________
   HEROKU_API_KEY: process.env.HEROKU_API_KEY || " ",
   //_________________________________________________________________________________________________________________________________
-  OWNER_NAME: process.env.OWNER_NAME || "Abhishek Suresh",
+  OWNER_NAME: process.env.OWNER_NAME || "Ahmad LeGanD",
   //_________________________________________________________________________________________________________________________________
-  OWNER_NUMBER: process.env.OWNER_NUMBER || "918157993101",
+  OWNER_NUMBER: process.env.OWNER_NUMBER || "923039538288",
   //_________________________________________________________________________________________________________________________________
   BOT_NAME: process.env.BOT_NAME || "Phoenix-MD",
   //_________________________________________________________________________________________________________________________________
   WORK_TYPE: process.env.MODE || "public",
   //_________________________________________________________________________________________________________________________________
-  MENTION_DATA: "Abhishek Suresh;Phoenix-MD;919074692450;https://graph.org/file/63942461d4b8d78b360d3.jpg;https://graph.org/file/bb3ac71ec991cef3d5216.mp4",
+  MENTION_DATA: "Ahmiii Legand;Phoenix-MD;923039538288;https://graph.org/file/63942461d4b8d78b360d3.jpg;https://graph.org/file/bb3ac71ec991cef3d5216.mp4",
   //_________________________________________________________________________________________________________________________________
   BASE_URL: "https://abhi-api-bvws.onrender.com/",
   //_________________________________________________________________________________________________________________________________
